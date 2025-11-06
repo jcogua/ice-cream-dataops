@@ -50,7 +50,7 @@ built_resources:
       version: '1'
     source:
       path: /home/user/Documents/workspace/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/workflows/wf_icapi_data_pipeline.WorkflowVersion.yaml
-      hash: c14568ca
+      hash: 1ea07896
     kind: WorkflowVersion
     destination: build/workflows/3.wf_icapi_data_pipeline.WorkflowVersion.yaml
   extraction_pipelines:
@@ -237,18 +237,18 @@ read_modules:
   - auth
 - dir: /home/user/Documents/workspace/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api
   resource_directories:
-  - auth
   - functions
-  - data_models
-  - raw
-  - extraction_pipelines
-  - hosted_extractors
-  - transformations
   - data_sets
+  - raw
+  - auth
+  - transformations
+  - extraction_pipelines
   - workflows
+  - data_models
+  - hosted_extractors
 - dir: /home/user/Documents/workspace/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee
   resource_directories:
-  - data_sets
-  - auth
   - data_models
   - functions
+  - auth
+  - data_sets

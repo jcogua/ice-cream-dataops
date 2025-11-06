@@ -34,3 +34,15 @@ workflowDefinition:
     onFailure: abortWorkflow
     dependsOn:
     - externalId: contextualize_ts_assets_task
+  - externalId: oee_timeseries_task
+    type: function
+    parameters:
+      function:
+        externalId: oee_timeseries
+        data: {}
+    name: Task Fourth
+    retries: 3
+    timeout: 3600
+    onFailure: abortWorkflow
+    dependsOn:
+    - externalId: create_asset_hierarchy_task
