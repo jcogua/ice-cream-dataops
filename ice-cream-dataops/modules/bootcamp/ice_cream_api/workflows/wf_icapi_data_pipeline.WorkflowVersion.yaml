@@ -45,4 +45,4 @@ workflowDefinition:
     timeout: 3600
     onFailure: abortWorkflow 
     dependsOn:
-      - externalId: create_asset_hierarchy_task     
+      - externalId: ep_icapi_datapoints_task     
