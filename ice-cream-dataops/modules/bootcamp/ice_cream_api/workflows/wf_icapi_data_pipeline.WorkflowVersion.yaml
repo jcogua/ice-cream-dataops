@@ -45,5 +45,4 @@ workflowDefinition:
     timeout: 3600
     onFailure: abortWorkflow 
     dependsOn:
-      - externalId: create_asset_hierarchy_task
-     
+      - externalId: create_asset_hierarchy_task     
